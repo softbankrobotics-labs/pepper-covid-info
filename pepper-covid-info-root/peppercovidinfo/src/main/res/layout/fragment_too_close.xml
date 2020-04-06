@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TooCloseFragment">
+
+    <ImageView
+        android:id="@+id/mainWarningImage"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layerType="software"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/iconfinder_keep_distance_social_5964547" />
+
+    <TextView
+        android:id="@+id/distanceLabel"
+        android:layout_width="254dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="344dp"
+        android:text="0.9m"
+        android:textAlignment="center"
+        android:textColor="#000090"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainWarningImage"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageView
+        android:id="@+id/distanceCheck"
+        android:layout_width="90dp"
+        android:layout_height="94dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/distanceLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_check_circle_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
